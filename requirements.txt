@@ -1,0 +1,7 @@
+Flask
+Jinja2
+Werkzeug
+twms
+psycopg2
+mapcss-parser
+

@@ -1,0 +1,45 @@
+body,
+html {
+	margin:0;
+	padding:0;
+}
+
+#map {
+	height: 570px;
+}
+
+#editor {
+    height: 500px;
+    width: 100%;
+}
+
+ul.thumbs li {
+    float: left;
+    list-style: none outside none;
+    margin: 5px 10px 5px 0;
+    padding: 0;
+}
+
+#swatch {
+  height: 25px;
+}
+
+ul#map-colors li {
+    float: left;
+    list-style: none outside none;
+    margin: 0 5px 5px 0;
+    padding: 0;
+}
+.thumbs {
+    width: 550px;
+    height: 350px;
+    overflow-y: auto;
+}
+.hexColor {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #666666;
+    border-radius: 2px;
+    display: inline-block;
+    cursor: pointer;
+}
