@@ -59,7 +59,7 @@ def send_style():
             response_body = mapcss_converter.render_js(request.form['name'],request_body)
             response_type = 'text/javascript'
             response_extension = 'js'
-       except:
+        except:
             abort(400)
     response = make_response(response_body)
     response.headers['Content-Disposition'] = 'attachment; filename=%s.%s' % (request.form['name'], response_extension) #force the browser to download result
