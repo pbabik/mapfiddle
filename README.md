@@ -18,17 +18,17 @@ The backend is written in Python, and depends on following Python modules:
 
 TWMS, cairo and rsvg are not available via PIP and must be installed manually.
 In Ubuntu this can be done using system package manager:
-sudo apt-get install python-twms python-cairo python-rsvg
+  sudo apt-get install python-twms python-cairo python-rsvg
 Then, install PIP-based packages:
-sudo pip install -r requirements.txt.
+  sudo pip install -r requirements.txt.
 The final step is to install mapcss-parser:
-git clone https://github.com/Miroff/mapcss-parser.git
-cd mapcss-parser
-sudo python setup.py install
+  git clone https://github.com/Miroff/mapcss-parser.git
+  cd mapcss-parser
+  sudo python setup.py install
 
 After that, the app can be run using Flask development server:
 
-python app.py
+  python app.py
 
 Open [http://127.0.0.1:5000](http://127.0.0.1:5000) in a web browser to verify.
 
