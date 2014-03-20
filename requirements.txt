@@ -2,5 +2,5 @@ Flask
 Jinja2
 Werkzeug
 psycopg2
-mapcss-parser
+ply
 

@@ -4,8 +4,8 @@ MapFiddle
 
 This project aims to be an rapid design tool for custom [OpenStreetMap](http://openstreetmap.org) styles. It's based on [KothicJS](https://github.com/kothic/kothic-js) in-browser map renderer.
 
-Requirements
-------------
+Requirements & Installation
+---------------------------
 
 The backend is written in Python, and depends on following Python modules:
 * Flask
@@ -15,7 +15,11 @@ The backend is written in Python, and depends on following Python modules:
 * mapcss-parser
 
 TWMS is not available via PIP and must be installed manually (at least in Ubuntu this can be done using system package manager, sudo apt-get install python-twms).
-All other should be installable using pip (sudo pip install -r requirements.txt).
+Then, install PIP-based packages (sudo pip install -r requirements.txt).
+The next step is to install mapcss-parser:
+git clone https://github.com/Miroff/mapcss-parser.git
+cd mapcss-parser
+sudo python setup.py install
 
 For vector tile rendering, a local [osm2pgsql](http://wiki.openstreetmap.org/wiki/Osm2pgsql) database is needed. The default osm2pgsql setup is sufficient.
 Alternatively, set the PostgreSQL connection string to __none__ and download an [example set of tiles](http://not-uploaded-yet) covering the area of Cracow, Poland.
