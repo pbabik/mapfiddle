@@ -35,9 +35,21 @@ Open [http://127.0.0.1:5000](http://127.0.0.1:5000) in a web browser to verify.
 For production deployments, follow the instructions for [deploying Flask apps](http://flask.pocoo.org/docs/deploying/#deployment).
 
 For vector tile rendering, a local [osm2pgsql](http://wiki.openstreetmap.org/wiki/Osm2pgsql) database is needed. The default osm2pgsql setup is sufficient.
-Alternatively, set the PostgreSQL connection string to __none__ and download an [example set of tiles](http://not-uploaded-yet) covering the area of Cracow, Poland.
+Alternatively, set the PostgreSQL connection string to __none__ and download an [example set of tiles](https://www.dropbox.com/s/jrk08zxbnukaa57/vtile.db) covering the area of Cracow, Poland.
 The tile set should be placed in "vtile" directory.
 
+Demo page
+---------
+
+You can test MapFiddle on the demo page: [mapfiddle.pl](http://mapfiddle.pl)
+Please note that this is hosted on Amazon EC2 Micro instance for now, so the performance can be horrible.
+
+Limitations
+-----------
+
+The tool is still rough around the edges. You can't download the icons (neither CSS sprite nor single PNG images), or store your style on the server.
+Also, the vector tile rendering script is VERY slow. 
+ 
 KothicJS uses HTML5 Canvas, so a modern web browser is a must. Chrome/Chromium is recommended to get the best performance. Firefox is slower and less stable (can crash during rendering).
 
 Acknowledgements
