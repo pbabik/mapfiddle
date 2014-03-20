@@ -14,7 +14,8 @@ The backend is written in Python, and depends on following Python modules:
 * twms
 * mapcss-parser
 
-All of them should be installable using pip (sudo pip install -r requirements.txt).
+TWMS is not available via PIP and must be installed manually (at least in Ubuntu this can be done using system package manager, sudo apt-get install python-twms).
+All other should be installable using pip (sudo pip install -r requirements.txt).
 
 For vector tile rendering, a local [osm2pgsql](http://wiki.openstreetmap.org/wiki/Osm2pgsql) database is needed. The default osm2pgsql setup is sufficient.
 Alternatively, set the PostgreSQL connection string to __none__ and download an [example set of tiles](http://not-uploaded-yet) covering the area of Cracow, Poland.
